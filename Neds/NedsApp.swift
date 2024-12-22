@@ -11,7 +11,7 @@ import SwiftUI
 struct NedsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListingView()
         }
     }
 }

@@ -7,18 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7634A1232D169A7A001FAD36 /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634A1222D169A7A001FAD36 /* CountdownManager.swift */; };
 		767931822D143E7700D99D92 /* NedsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931812D143E7700D99D92 /* NedsApp.swift */; };
 		767931842D143E7700D99D92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931832D143E7700D99D92 /* ContentView.swift */; };
 		767931862D143E7900D99D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767931852D143E7900D99D92 /* Assets.xcassets */; };
 		767931892D143E7900D99D92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767931882D143E7900D99D92 /* Preview Assets.xcassets */; };
+		767931912D14510A00D99D92 /* NedsAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931902D14510A00D99D92 /* NedsAPIError.swift */; };
+		767931952D14562200D99D92 /* NedsAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931942D14562200D99D92 /* NedsAPIEndpoint.swift */; };
+		767931982D14BF1400D99D92 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931972D14BF1400D99D92 /* APIEndpoint.swift */; };
+		7679319B2D14BF4000D99D92 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7679319A2D14BF4000D99D92 /* HTTPMethod.swift */; };
+		7679319D2D14BFE100D99D92 /* NedsListingEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7679319C2D14BFE100D99D92 /* NedsListingEndpoint.swift */; };
+		767931A02D14C4B900D99D92 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7679319F2D14C4B900D99D92 /* APIProtocol.swift */; };
+		767931A32D14C5B800D99D92 /* NedsURLSessionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931A22D14C5B800D99D92 /* NedsURLSessionClient.swift */; };
+		767931AC2D14D07400D99D92 /* NedsRacingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931AB2D14D07400D99D92 /* NedsRacingService.swift */; };
+		767931B32D14D32F00D99D92 /* ListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931B22D14D32F00D99D92 /* ListingViewModel.swift */; };
+		767931B62D14D42300D99D92 /* RaceSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931B52D14D42300D99D92 /* RaceSummary.swift */; };
+		767931B82D14D68600D99D92 /* ListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931B72D14D68600D99D92 /* ListingView.swift */; };
+		767931BC2D158BCF00D99D92 /* RaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931BB2D158BCE00D99D92 /* RaceItemView.swift */; };
+		767931BF2D159BED00D99D92 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931BE2D159BED00D99D92 /* AppFonts.swift */; };
+		767931C12D15A37200D99D92 /* NedsRaceSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C02D15A37200D99D92 /* NedsRaceSelectionView.swift */; };
+		767931C32D15A4D400D99D92 /* NedsCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C22D15A4D300D99D92 /* NedsCheckboxView.swift */; };
+		767931C72D15AD2D00D99D92 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C62D15AD2D00D99D92 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7634A1222D169A7A001FAD36 /* CountdownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
 		7679317E2D143E7700D99D92 /* Neds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		767931812D143E7700D99D92 /* NedsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsApp.swift; sourceTree = "<group>"; };
 		767931832D143E7700D99D92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		767931852D143E7900D99D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767931882D143E7900D99D92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		767931902D14510A00D99D92 /* NedsAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsAPIError.swift; sourceTree = "<group>"; };
+		767931942D14562200D99D92 /* NedsAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsAPIEndpoint.swift; sourceTree = "<group>"; };
+		767931972D14BF1400D99D92 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		7679319A2D14BF4000D99D92 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		7679319C2D14BFE100D99D92 /* NedsListingEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsListingEndpoint.swift; sourceTree = "<group>"; };
+		7679319F2D14C4B900D99D92 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		767931A22D14C5B800D99D92 /* NedsURLSessionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsURLSessionClient.swift; sourceTree = "<group>"; };
+		767931AB2D14D07400D99D92 /* NedsRacingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRacingService.swift; sourceTree = "<group>"; };
+		767931B22D14D32F00D99D92 /* ListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewModel.swift; sourceTree = "<group>"; };
+		767931B52D14D42300D99D92 /* RaceSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSummary.swift; sourceTree = "<group>"; };
+		767931B72D14D68600D99D92 /* ListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingView.swift; sourceTree = "<group>"; };
+		767931BB2D158BCE00D99D92 /* RaceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceItemView.swift; sourceTree = "<group>"; };
+		767931BE2D159BED00D99D92 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		767931C02D15A37200D99D92 /* NedsRaceSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceSelectionView.swift; sourceTree = "<group>"; };
+		767931C22D15A4D300D99D92 /* NedsCheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsCheckboxView.swift; sourceTree = "<group>"; };
+		767931C62D15AD2D00D99D92 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +85,10 @@
 		767931802D143E7700D99D92 /* Neds */ = {
 			isa = PBXGroup;
 			children = (
+				767931BD2D159BDD00D99D92 /* Styles */,
+				767931B42D14D40D00D99D92 /* Models */,
+				767931AD2D14D19F00D99D92 /* Features */,
+				7679318F2D1450D700D99D92 /* NedsAPIService */,
 				767931812D143E7700D99D92 /* NedsApp.swift */,
 				767931832D143E7700D99D92 /* ContentView.swift */,
 				767931852D143E7900D99D92 /* Assets.xcassets */,
@@ -65,6 +103,115 @@
 				767931882D143E7900D99D92 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7679318F2D1450D700D99D92 /* NedsAPIService */ = {
+			isa = PBXGroup;
+			children = (
+				767931AA2D14D05C00D99D92 /* Services */,
+				767931A12D14C59400D99D92 /* Classes */,
+				7679319E2D14BFF300D99D92 /* Endpoints */,
+				767931992D14BF3000D99D92 /* Enums */,
+				767931962D14BEFC00D99D92 /* Protocols */,
+				767931942D14562200D99D92 /* NedsAPIEndpoint.swift */,
+			);
+			path = NedsAPIService;
+			sourceTree = "<group>";
+		};
+		767931962D14BEFC00D99D92 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				767931972D14BF1400D99D92 /* APIEndpoint.swift */,
+				7679319F2D14C4B900D99D92 /* APIProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		767931992D14BF3000D99D92 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				767931902D14510A00D99D92 /* NedsAPIError.swift */,
+				7679319A2D14BF4000D99D92 /* HTTPMethod.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		7679319E2D14BFF300D99D92 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				7679319C2D14BFE100D99D92 /* NedsListingEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		767931A12D14C59400D99D92 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				767931A22D14C5B800D99D92 /* NedsURLSessionClient.swift */,
+				7634A1222D169A7A001FAD36 /* CountdownManager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		767931AA2D14D05C00D99D92 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				767931AB2D14D07400D99D92 /* NedsRacingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		767931AD2D14D19F00D99D92 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				767931AE2D14D2D500D99D92 /* Listing */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		767931AE2D14D2D500D99D92 /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				767931B12D14D2EA00D99D92 /* ViewModels */,
+				767931B02D14D2E400D99D92 /* Views */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
+		767931B02D14D2E400D99D92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				767931B72D14D68600D99D92 /* ListingView.swift */,
+				767931BB2D158BCE00D99D92 /* RaceItemView.swift */,
+				767931C02D15A37200D99D92 /* NedsRaceSelectionView.swift */,
+				767931C22D15A4D300D99D92 /* NedsCheckboxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		767931B12D14D2EA00D99D92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				767931B22D14D32F00D99D92 /* ListingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		767931B42D14D40D00D99D92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				767931B52D14D42300D99D92 /* RaceSummary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		767931BD2D159BDD00D99D92 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				767931BE2D159BED00D99D92 /* AppFonts.swift */,
+				767931C62D15AD2D00D99D92 /* AppColors.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,15 +284,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7679319D2D14BFE100D99D92 /* NedsListingEndpoint.swift in Sources */,
+				767931982D14BF1400D99D92 /* APIEndpoint.swift in Sources */,
+				7679319B2D14BF4000D99D92 /* HTTPMethod.swift in Sources */,
+				767931AC2D14D07400D99D92 /* NedsRacingService.swift in Sources */,
+				767931C12D15A37200D99D92 /* NedsRaceSelectionView.swift in Sources */,
+				767931A02D14C4B900D99D92 /* APIProtocol.swift in Sources */,
+				767931B62D14D42300D99D92 /* RaceSummary.swift in Sources */,
+				767931BF2D159BED00D99D92 /* AppFonts.swift in Sources */,
+				767931BC2D158BCF00D99D92 /* RaceItemView.swift in Sources */,
+				767931C72D15AD2D00D99D92 /* AppColors.swift in Sources */,
+				767931952D14562200D99D92 /* NedsAPIEndpoint.swift in Sources */,
+				7634A1232D169A7A001FAD36 /* CountdownManager.swift in Sources */,
+				767931B82D14D68600D99D92 /* ListingView.swift in Sources */,
 				767931842D143E7700D99D92 /* ContentView.swift in Sources */,
+				767931912D14510A00D99D92 /* NedsAPIError.swift in Sources */,
+				767931B32D14D32F00D99D92 /* ListingViewModel.swift in Sources */,
+				767931C32D15A4D400D99D92 /* NedsCheckboxView.swift in Sources */,
 				767931822D143E7700D99D92 /* NedsApp.swift in Sources */,
+				767931A32D14C5B800D99D92 /* NedsURLSessionClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7679318A2D143E7900D99D92 /* Debug */ = {
+		767931A42D14C8C300D99D92 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -206,9 +370,37 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Development;
 		};
-		7679318B2D143E7900D99D92 /* Release */ = {
+		767931A52D14C8C300D99D92 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Neds/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Neds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		767931A62D14C8D600D99D92 /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,6 +440,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -262,9 +455,9 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Production;
 		};
-		7679318D2D143E7900D99D92 /* Debug */ = {
+		767931A72D14C8D600D99D92 /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -290,35 +483,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
-		};
-		7679318E2D143E7900D99D92 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Neds/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Neds;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
+			name = Production;
 		};
 /* End XCBuildConfiguration section */
 
@@ -326,20 +491,20 @@
 		767931792D143E7700D99D92 /* Build configuration list for PBXProject "Neds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7679318A2D143E7900D99D92 /* Debug */,
-				7679318B2D143E7900D99D92 /* Release */,
+				767931A42D14C8C300D99D92 /* Development */,
+				767931A62D14C8D600D99D92 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		7679318C2D143E7900D99D92 /* Build configuration list for PBXNativeTarget "Neds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7679318D2D143E7900D99D92 /* Debug */,
-				7679318E2D143E7900D99D92 /* Release */,
+				767931A52D14C8C300D99D92 /* Development */,
+				767931A72D14C8D600D99D92 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 /* End XCConfigurationList section */
 	};
