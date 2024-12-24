@@ -27,6 +27,7 @@
 		344B35EF2D1A90EA006499FE /* NedsRaceCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35ED2D1A90DF006499FE /* NedsRaceCountdownView.swift */; };
 		34C5CA6C2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C5CA6B2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard */; };
 		34C5CA6D2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C5CA6B2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard */; };
+		760733A12D1AD2AC00148F43 /* api_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 760733A02D1AD27700148F43 /* api_response.json */; };
 		7634A1332D1A0D07001FAD36 /* MockAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634A1322D1A0D07001FAD36 /* MockAPIProvider.swift */; };
 		76E8CA132D1A1CA40077B95B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C62D15AD2D00D99D92 /* AppColors.swift */; };
 		76E8CA142D1A1CA50077B95B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C62D15AD2D00D99D92 /* AppColors.swift */; };
@@ -94,6 +95,7 @@
 		344B35EA2D1A907F006499FE /* NedsRaceTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceTitleView.swift; sourceTree = "<group>"; };
 		344B35ED2D1A90DF006499FE /* NedsRaceCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceCountdownView.swift; sourceTree = "<group>"; };
 		34C5CA6B2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NedsLaunchScreen.storyboard; sourceTree = "<group>"; };
+		760733A02D1AD27700148F43 /* api_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = api_response.json; sourceTree = "<group>"; };
 		7634A1222D169A7A001FAD36 /* CountdownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
 		7634A1282D18CD2D001FAD36 /* NedsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NedsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7634A1322D1A0D07001FAD36 /* MockAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIProvider.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		7634A1292D18CD2D001FAD36 /* NedsTests */ = {
 			isa = PBXGroup;
 			children = (
+				760733A02D1AD27700148F43 /* api_response.json */,
 				7634A1342D1A0D52001FAD36 /* Tests */,
 				7634A1312D1A0CCA001FAD36 /* Mocks */,
 			);
@@ -479,6 +482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				760733A12D1AD2AC00148F43 /* api_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

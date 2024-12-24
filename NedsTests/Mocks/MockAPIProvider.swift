@@ -10,16 +10,16 @@ import Combine
 
 @testable import NedsDevelopment
 
-struct MockAPIEndpoint: APIEndpoint {
-    var baseURL: URL? = URL(string: "https://www.google.com")
-    var path: String  = "test"
-    var method: HTTPMethod = .get
-    var headers: [String: String]? = nil
-    var parameters: [String: String]? = nil
-}
+//struct MockAPIEndpoint: APIEndpoint {
+//    var baseURL: URL? = URL(string: "https://www.google.com")
+//    var path: String  = "test"
+//    var method: HTTPMethod = .get
+//    var headers: [String: String]? = nil
+//    var parameters: [String: String]? = nil
+//}
 
 class MockAPI: APIProtocol {
-    typealias EndpointType = MockAPIEndpoint
+    typealias EndpointType = MockEndpoint
 
     var mockResponseData: Data?
     var mockError: Error?

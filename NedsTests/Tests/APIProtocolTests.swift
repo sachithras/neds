@@ -13,81 +13,63 @@ import XCTest
 final class APIProtocolTests: XCTestCase {
     var mockAPI: MockAPI!
     var cancellables: Set<AnyCancellable>!
-
+    
     override func setUp() {
         super.setUp()
         mockAPI = MockAPI()
         cancellables = []
     }
-
+    
     override func tearDown() {
         mockAPI = nil
         cancellables = nil
         super.tearDown()
     }
-
+    
     func testRequestSuccess() {
-        // Given
-        let mockJSON = """
-        {
-            "status": 200,
-            "data": {
-                "next_to_go_ids": [
-                    "753e6675-2eaa-4579-a7f1-095fcdcb597a",
-                    "0a124a47-ca36-4717-a070-c72b67036fa7"
-                ],
-                "race_summaries": {
-                    "753e6675-2eaa-4579-a7f1-095fcdcb597a": {
-                        "race_id": "753e6675-2eaa-4579-a7f1-095fcdcb597a",
-                        "race_name": "Pakenham BM78 Handicap",
-                        "race_number": 7,
-                        "meeting_id": "e1814db9-517d-49d5-aae3-e015dffb3176",
-                        "meeting_name": "Pakenham",
-                        "category_id": "4a2788f8-e825-4d36-9894-efd4baf1cfae",
-                        "advertised_start": { "seconds": 1734756300 },
-                        "race_form": {
-                            "distance": 1600,
-                            "distance_type": { "id": "570775ae-09ec-42d5-989d-7c8f06366aa7", "name": "Metres", "short_name": "m" },
-                            "track_condition": { "id": "908a410f-ab10-11e7-85e3-0641c90711b8", "name": "Good3", "short_name": "good3" },
-                            "weather": { "id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3", "name": "FINE", "short_name": "fine", "icon_uri": "FINE" },
-                            "race_comment": "Sample race comment"
-                        }
-                    }
-                }
-            },
-            "message": "Next 10 races from each category"
+        
+        let decoder = JSONDecoder()
+        
+        guard let fileURL =  Bundle(for: type(of: self)).url(forResource: "api_response", withExtension: "json") else {
+            return XCTFail("Request failed with url error")
         }
-        """
-        mockAPI.mockResponseData = mockJSON.data(using: .utf8)
-
-        // When
-        let expectation = XCTestExpectation(description: "Request should succeed")
-
-        mockAPI.request(endpoint: MockAPIEndpoint(path: "/races"))
-            .sink(receiveCompletion: { completion in
-                if case .failure(let error) = completion {
-                    XCTFail("Request failed with error: \(error)")
-                }
-            }, receiveValue: { (response: DataResponse<DataClass>) in
-                // Then
-                XCTAssertEqual(response.status, 200)
-                XCTAssertEqual(response.data.nextToGoIDS.count, 2)
-                XCTAssertEqual(response.data.raceSummaries["753e6675-2eaa-4579-a7f1-095fcdcb597a"]?.raceName, "Pakenham BM78 Handicap")
-                expectation.fulfill()
-            })
-            .store(in: &self.cancellables)
-
-        wait(for: [expectation], timeout: 1.0)
+        
+        do {
+            // Given
+            let jsonData = try Data(contentsOf: fileURL)
+            mockAPI.mockResponseData = jsonData
+            
+            // When
+            let expectation = XCTestExpectation(description: "Request should succeed")
+            
+            mockAPI.request(endpoint: MockEndpoint.test(method: "method"))
+                .sink(receiveCompletion: { completion in
+                    if case .failure(let error) = completion {
+                        XCTFail("Request failed with error: \(error)")
+                    }
+                }, receiveValue: { (response: DataResponse<RaceData>) in
+                    // Then
+                    XCTAssertEqual(response.status, 200)
+                    XCTAssertEqual(response.data.nextToGoIDS.count, 10)
+                    XCTAssertEqual(response.data.raceSummaries["226e66eb-fd8d-4cff-adb0-50f61513ed17"]?.raceName, "Race 12 - 1609M")
+                    expectation.fulfill()
+                })
+                .store(in: &self.cancellables)
+            
+            wait(for: [expectation], timeout: 1.0)
+        } catch {
+            XCTFail("Request failed with \(error.localizedDescription)")
+        }
     }
-
+    
     func testRequestFailure() {
         // Given
         mockAPI.mockError = NSError(domain: "TestError", code: 404, userInfo: nil)
-
+        
         // When
         let expectation = XCTestExpectation(description: "Request should fail")
-
-        mockAPI.request(endpoint: MockAPIEndpoint(path: "/invalid"))
+        
+        mockAPI.request(endpoint: MockEndpoint.test(method: "method"))
             .sink(receiveCompletion: { completion in
                 if case .failure(let error) = completion {
                     // Then
@@ -96,11 +78,11 @@ final class APIProtocolTests: XCTestCase {
                 } else {
                     XCTFail("Request succeeded unexpectedly")
                 }
-            }, receiveValue: { (response: DataResponse<DataClass>) in
+            }, receiveValue: { (response: DataResponse<RaceData>) in
                 XCTFail("Received response unexpectedly: \(response)")
             })
             .store(in: &self.cancellables)
-
+        
         wait(for: [expectation], timeout: 1.0)
     }
 }
