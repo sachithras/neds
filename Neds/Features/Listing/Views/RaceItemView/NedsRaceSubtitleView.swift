@@ -2,16 +2,14 @@
 //  NedsRaceSubtitleView.swift
 //  Neds
 //
-//  Created by Sachithra Udayanga Siriwardhane on 24/12/24.
+//  Created by Sachithra Udayanga on 24/12/24.
 //
 
 import SwiftUI
 
 struct NedsRaceSubtitleView: View {
-    
     var distance: Int?
     var distanceType: String?
-    
     var body: some View {
         HStack {
             if let distance = distance,

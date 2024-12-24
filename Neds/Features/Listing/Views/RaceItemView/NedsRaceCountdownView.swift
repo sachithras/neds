@@ -7,48 +7,42 @@
 
 import SwiftUI
 
-struct CountdownView: View {
-    
-    enum CountdownStatus: Equatable {
-        case none
-        case expired
-        case lessThanAMinutePassed(time: String)
-        case remainingAMinute(time: String)
-        case remainingOverAMinute(time: String)
-        
-        var textColor: Color {
-            switch self {
-            case .none, .expired:
-                return AppColors.Countdown.gray
-            case .lessThanAMinutePassed:
-                return AppColors.Countdown.red
-            case .remainingAMinute:
-                return AppColors.Countdown.orange
-            case .remainingOverAMinute:
-                return AppColors.Countdown.green
-            }
-        }
-        
-        var text: String {
-            switch self {
-            case .none, .expired:
-                return ""
-            case .lessThanAMinutePassed(let time):
-                return time
-            case .remainingAMinute(let time):
-                return time
-            case .remainingOverAMinute(let time):
-                return time
-            }
+fileprivate enum CountdownStatus: Equatable {
+    case none
+    case expired
+    case lessThanAMinutePassed(time: String)
+    case remainingAMinute(time: String)
+    case remainingOverAMinute(time: String)
+    var textColor: Color {
+        switch self {
+        case .none, .expired:
+            return AppColors.Countdown.gray
+        case .lessThanAMinutePassed:
+            return AppColors.Countdown.red
+        case .remainingAMinute:
+            return AppColors.Countdown.orange
+        case .remainingOverAMinute:
+            return AppColors.Countdown.green
         }
     }
-    
-    @State var countdownStatus: CountdownStatus = .none
-    
+    var text: String {
+        switch self {
+        case .none, .expired:
+            return ""
+        case .lessThanAMinutePassed(let time):
+            return time
+        case .remainingAMinute(let time):
+            return time
+        case .remainingOverAMinute(let time):
+            return time
+        }
+    }
+}
+
+struct CountdownView: View {
+    @State fileprivate var countdownStatus: CountdownStatus = .none
     @Binding var isExpired: Bool
-    
     var startTimeStamp: Int
-    
     var currentTime: Date
     
     var body: some View {

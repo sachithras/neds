@@ -1,0 +1,6 @@
+framework module Pods_NedsProduction {
+  umbrella header "Pods-NedsProduction-umbrella.h"
+
+  export *
+  module * { export * }
+}

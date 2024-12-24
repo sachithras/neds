@@ -2,7 +2,7 @@
 //  NedsRaceTitleView.swift
 //  Neds
 //
-//  Created by Sachithra Udayanga Siriwardhane on 24/12/24.
+//  Created by Sachithra Udayanga on 24/12/24.
 //
 
 import SwiftUI

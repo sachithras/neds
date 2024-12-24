@@ -10,11 +10,8 @@ import Combine
 
 @MainActor
 class ListingViewModel: ObservableObject {
-    
     private var cancellables = Set<AnyCancellable>()
-    
     let listingService: RacingServiceProtocol
-    
     @Published var raceSummaries: [RaceSummary]? = []
     @Published var filteredRaceSummaries: [RaceSummary]? = []
     @Published var errorMessage: String?
