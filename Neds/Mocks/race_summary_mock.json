@@ -1,0 +1,42 @@
+{
+    "race_id":"05984b98-b4eb-4f00-98d7-ac265c604cd4",
+    "race_name":"Nutrien Equine Up To 2 3Yo+ Wins Pace",
+    "race_number":4,
+    "meeting_id":"14dc9352-c75e-4d27-b9c2-3f65a0dedeac",
+    "meeting_name":"Albion Park",
+    "category_id":"161d9be2-e909-4326-8c2c-35ed71fb460b",
+    "advertised_start":{
+        "seconds":1735012320
+    },
+    "race_form":{
+        "distance":1660,
+        "distance_type":{
+            "id":"570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name":"Metres",
+            "short_name":"m"
+        },
+        "distance_type_id":"570775ae-09ec-42d5-989d-7c8f06366aa7",
+        "track_condition":{
+            "id":"10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name":"Good",
+            "short_name":"good"
+        },
+        "track_condition_id":"10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+        "weather":{
+            "id":"08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+            "name":"FINE",
+            "short_name":"fine",
+            "icon_uri":"FINE"
+        },
+        "weather_id":"08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+        "race_comment":"BEV THE GOAT (7) finished seventh at her latest appearance, beaten 11 metres, over 2138m at this track on December 13. Sharpened up since that outing with a minor placing at the trials. Tactics will be crucial from this wide draw. Stepping up a level this time but on her best form she is capable of another big performance. EDWARD JAY (8) finished fourth last start, beaten 11 metres at this track over 1660m. Expect him to be prominent. MULLUM ROXY (2) has been hard to fault of late, adding to the winning tally last start with success over 1660m at this track. No reason the run cannot continue. WHOS WATCHING LILY (3) has drawn to advantage and should give backers a great sight.",
+        "additional_data":"{\"revealed_race_info\":{\"track_name\":\"Albion Park\",\"state\":\"QLD\",\"country\":\"AUS\",\"number\":4,\"race_name\":\"Nutrien Equine Up To 2 3Yo+ Wins Pace\",\"time\":\"2024-12-24T03:52:00Z\",\"class\":\"No more than 2 3YO+ wins\",\"start_type\":\"Mobile\",\"prizemonies\":{\"total_value\":9000},\"localised_prizemonies\":{\"AUD\":{\"10th\":60,\"1st\":5481,\"2nd\":1566,\"3rd\":783,\"4th\":522,\"5th\":348,\"6th\":60,\"7th\":60,\"8th\":60,\"9th\":60,\"total_value\":9000},\"NZD\":{\"10th\":66,\"1st\":6029,\"2nd\":1723,\"3rd\":861,\"4th\":574,\"5th\":383,\"6th\":66,\"7th\":66,\"8th\":66,\"9th\":66,\"total_value\":9900}},\"rail_position\":\"\",\"track_direction\":\"Right\",\"track_surface\":\"All Weather\",\"group\":\"\",\"gait\":\"P\",\"track_home_straight_metres\":0,\"track_circumference\":1019}}",
+        "generated":1,
+        "silk_base_url":"drr38safykj6s.cloudfront.net",
+        "race_comment_alternative":"BEV THE GOAT (7) finished seventh at her latest appearance, beaten 11 metres, over 2138m at this track on December 13. Sharpened up since that outing with a minor placing at the trials. Tactics will be crucial from this wide draw. Stepping up a level this time but on her best form she is capable of another big performance. EDWARD JAY (8) finished fourth last start, beaten 11 metres at this track over 1660m. Expect him to be prominent. MULLUM ROXY (2) has been hard to fault of late, adding to the winning tally last start with success over 1660m at this track. No reason the run cannot continue. WHOS WATCHING LILY (3) has drawn to advantage and should give backers a great sight."
+    },
+    "venue_id":"41036055-b448-4471-b64b-518543066fd1",
+    "venue_name":"Albion Park",
+    "venue_state":"QLD",
+    "venue_country":"AUS"
+}

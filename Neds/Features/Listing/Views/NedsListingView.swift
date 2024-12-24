@@ -12,8 +12,6 @@ struct ListingView: View {
     
     @StateObject var viewModel = ListingViewModel(listingService: NedsRacingService())
     
-    @State private var cancellable: AnyCancellable?
-    
     @State var raceFilters: [NedsRaceTypeSelection] = [
         NedsRaceTypeSelection(raceType: .horse, isSelected: true),
         NedsRaceTypeSelection(raceType: .greyhound, isSelected: true),
@@ -28,8 +26,12 @@ struct ListingView: View {
                     .onChange(of: raceFilters.map(\.isSelected)) { oldValue, newValue in
                         fetchRaces()
                     }
-                if let races = viewModel.filteredRaceSummaries, !races.isEmpty {
-                    RaceListingView(sortedRaces: races)
+                if viewModel.isLoading {
+                    NedsSpinnerView()
+                } else if let races = viewModel.filteredRaceSummaries, !races.isEmpty {
+                    NedsRaceListingView(sortedRaces: races) { _ in
+                        fetchRaces()
+                    }
                 } else if let error = viewModel.errorMessage {
                     NedsErrorView(errorMessage: error) {
                         fetchRaces()
@@ -50,27 +52,6 @@ struct ListingView: View {
         viewModel.fetchRaces(for: selectedItems)
     }
 }
-
-struct RaceListingView: View {
-    
-    @StateObject private var countdownManager = CountdownManager()
-    
-    var sortedRaces: [RaceSummary]
-    
-    var body: some View {
-        List {
-            ForEach(sortedRaces, id: \.self) { race in
-                RaceItemView(raceSummary: race,
-                             currentTime: countdownManager.currentTime)
-                .listRowInsets(EdgeInsets(top: 0,
-                                          leading: 0,
-                                          bottom: 0,
-                                          trailing: 0))
-            }
-        }
-    }
-}
-
 
 // MARK: - Preview
 struct ListingView_Previews: PreviewProvider {

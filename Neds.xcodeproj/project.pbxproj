@@ -9,6 +9,22 @@
 /* Begin PBXBuildFile section */
 		344B35CE2D1A5886006499FE /* NedsBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35CD2D1A5886006499FE /* NedsBannerView.swift */; };
 		344B35CF2D1A5886006499FE /* NedsBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35CD2D1A5886006499FE /* NedsBannerView.swift */; };
+		344B35D22D1A642D006499FE /* race_summary_mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 344B35D12D1A641E006499FE /* race_summary_mock.json */; };
+		344B35D32D1A642D006499FE /* race_summary_mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 344B35D12D1A641E006499FE /* race_summary_mock.json */; };
+		344B35D72D1A653A006499FE /* JsonFileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35D62D1A6526006499FE /* JsonFileDecoder.swift */; };
+		344B35D82D1A653A006499FE /* JsonFileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35D62D1A6526006499FE /* JsonFileDecoder.swift */; };
+		344B35DA2D1A6E31006499FE /* NedsSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35D92D1A6E31006499FE /* NedsSpinnerView.swift */; };
+		344B35DB2D1A6E31006499FE /* NedsSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35D92D1A6E31006499FE /* NedsSpinnerView.swift */; };
+		344B35DD2D1A6FB2006499FE /* listing_respose_mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 344B35DC2D1A6F9A006499FE /* listing_respose_mock.json */; };
+		344B35DE2D1A6FB2006499FE /* listing_respose_mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 344B35DC2D1A6F9A006499FE /* listing_respose_mock.json */; };
+		344B35E42D1A8B4C006499FE /* NedsRaceListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35E32D1A8B4C006499FE /* NedsRaceListingView.swift */; };
+		344B35E52D1A8B4C006499FE /* NedsRaceListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35E32D1A8B4C006499FE /* NedsRaceListingView.swift */; };
+		344B35E82D1A907B006499FE /* NedsRaceSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35E72D1A9071006499FE /* NedsRaceSubtitleView.swift */; };
+		344B35E92D1A907B006499FE /* NedsRaceSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35E72D1A9071006499FE /* NedsRaceSubtitleView.swift */; };
+		344B35EB2D1A9086006499FE /* NedsRaceTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35EA2D1A907F006499FE /* NedsRaceTitleView.swift */; };
+		344B35EC2D1A9086006499FE /* NedsRaceTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35EA2D1A907F006499FE /* NedsRaceTitleView.swift */; };
+		344B35EE2D1A90EA006499FE /* NedsRaceCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35ED2D1A90DF006499FE /* NedsRaceCountdownView.swift */; };
+		344B35EF2D1A90EA006499FE /* NedsRaceCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35ED2D1A90DF006499FE /* NedsRaceCountdownView.swift */; };
 		7634A1332D1A0D07001FAD36 /* MockAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634A1322D1A0D07001FAD36 /* MockAPIProvider.swift */; };
 		76E8CA132D1A1CA40077B95B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C62D15AD2D00D99D92 /* AppColors.swift */; };
 		76E8CA142D1A1CA50077B95B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C62D15AD2D00D99D92 /* AppColors.swift */; };
@@ -16,9 +32,9 @@
 		76E8CA162D1A1CAB0077B95B /* RaceSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931B52D14D42300D99D92 /* RaceSummary.swift */; };
 		76E8CA172D1A1CC20077B95B /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634A1222D169A7A001FAD36 /* CountdownManager.swift */; };
 		76E8CA182D1A1CC20077B95B /* ListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931B22D14D32F00D99D92 /* ListingViewModel.swift */; };
-		76E8CA192D1A1CC20077B95B /* RaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931BB2D158BCE00D99D92 /* RaceItemView.swift */; };
+		76E8CA192D1A1CC20077B95B /* NedsRaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931BB2D158BCE00D99D92 /* NedsRaceItemView.swift */; };
 		76E8CA1A2D1A1CC20077B95B /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7679319F2D14C4B900D99D92 /* APIProtocol.swift */; };
-		76E8CA1B2D1A1CC20077B95B /* ListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931B72D14D68600D99D92 /* ListingView.swift */; };
+		76E8CA1B2D1A1CC20077B95B /* NedsListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931B72D14D68600D99D92 /* NedsListingView.swift */; };
 		76E8CA1C2D1A1CC20077B95B /* NedsCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C22D15A4D300D99D92 /* NedsCheckboxView.swift */; };
 		76E8CA1D2D1A1CC20077B95B /* NedsRacingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931AB2D14D07400D99D92 /* NedsRacingService.swift */; };
 		76E8CA1E2D1A1CC20077B95B /* NedsRaceSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C02D15A37200D99D92 /* NedsRaceSelectionView.swift */; };
@@ -30,9 +46,9 @@
 		76E8CA252D1A1CC20077B95B /* NedsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931812D143E7700D99D92 /* NedsApp.swift */; };
 		76E8CA262D1A1CC20077B95B /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634A1222D169A7A001FAD36 /* CountdownManager.swift */; };
 		76E8CA272D1A1CC20077B95B /* ListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931B22D14D32F00D99D92 /* ListingViewModel.swift */; };
-		76E8CA282D1A1CC20077B95B /* RaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931BB2D158BCE00D99D92 /* RaceItemView.swift */; };
+		76E8CA282D1A1CC20077B95B /* NedsRaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931BB2D158BCE00D99D92 /* NedsRaceItemView.swift */; };
 		76E8CA292D1A1CC20077B95B /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7679319F2D14C4B900D99D92 /* APIProtocol.swift */; };
-		76E8CA2A2D1A1CC20077B95B /* ListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931B72D14D68600D99D92 /* ListingView.swift */; };
+		76E8CA2A2D1A1CC20077B95B /* NedsListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931B72D14D68600D99D92 /* NedsListingView.swift */; };
 		76E8CA2B2D1A1CC20077B95B /* NedsCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C22D15A4D300D99D92 /* NedsCheckboxView.swift */; };
 		76E8CA2C2D1A1CC20077B95B /* NedsRacingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931AB2D14D07400D99D92 /* NedsRacingService.swift */; };
 		76E8CA2D2D1A1CC20077B95B /* NedsRaceSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C02D15A37200D99D92 /* NedsRaceSelectionView.swift */; };
@@ -67,6 +83,14 @@
 
 /* Begin PBXFileReference section */
 		344B35CD2D1A5886006499FE /* NedsBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsBannerView.swift; sourceTree = "<group>"; };
+		344B35D12D1A641E006499FE /* race_summary_mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = race_summary_mock.json; sourceTree = "<group>"; };
+		344B35D62D1A6526006499FE /* JsonFileDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileDecoder.swift; sourceTree = "<group>"; };
+		344B35D92D1A6E31006499FE /* NedsSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsSpinnerView.swift; sourceTree = "<group>"; };
+		344B35DC2D1A6F9A006499FE /* listing_respose_mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listing_respose_mock.json; sourceTree = "<group>"; };
+		344B35E32D1A8B4C006499FE /* NedsRaceListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceListingView.swift; sourceTree = "<group>"; };
+		344B35E72D1A9071006499FE /* NedsRaceSubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceSubtitleView.swift; sourceTree = "<group>"; };
+		344B35EA2D1A907F006499FE /* NedsRaceTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceTitleView.swift; sourceTree = "<group>"; };
+		344B35ED2D1A90DF006499FE /* NedsRaceCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceCountdownView.swift; sourceTree = "<group>"; };
 		7634A1222D169A7A001FAD36 /* CountdownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
 		7634A1282D18CD2D001FAD36 /* NedsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NedsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7634A1322D1A0D07001FAD36 /* MockAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIProvider.swift; sourceTree = "<group>"; };
@@ -84,8 +108,8 @@
 		767931AB2D14D07400D99D92 /* NedsRacingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRacingService.swift; sourceTree = "<group>"; };
 		767931B22D14D32F00D99D92 /* ListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewModel.swift; sourceTree = "<group>"; };
 		767931B52D14D42300D99D92 /* RaceSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSummary.swift; sourceTree = "<group>"; };
-		767931B72D14D68600D99D92 /* ListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingView.swift; sourceTree = "<group>"; };
-		767931BB2D158BCE00D99D92 /* RaceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceItemView.swift; sourceTree = "<group>"; };
+		767931B72D14D68600D99D92 /* NedsListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsListingView.swift; sourceTree = "<group>"; };
+		767931BB2D158BCE00D99D92 /* NedsRaceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceItemView.swift; sourceTree = "<group>"; };
 		767931BE2D159BED00D99D92 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		767931C02D15A37200D99D92 /* NedsRaceSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceSelectionView.swift; sourceTree = "<group>"; };
 		767931C22D15A4D300D99D92 /* NedsCheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsCheckboxView.swift; sourceTree = "<group>"; };
@@ -121,6 +145,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		344B35D02D1A6412006499FE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				344B35DC2D1A6F9A006499FE /* listing_respose_mock.json */,
+				344B35D12D1A641E006499FE /* race_summary_mock.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		344B35D52D1A6519006499FE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				344B35D62D1A6526006499FE /* JsonFileDecoder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		344B35E62D1A901F006499FE /* RaceItemView */ = {
+			isa = PBXGroup;
+			children = (
+				344B35ED2D1A90DF006499FE /* NedsRaceCountdownView.swift */,
+				344B35EA2D1A907F006499FE /* NedsRaceTitleView.swift */,
+				344B35E72D1A9071006499FE /* NedsRaceSubtitleView.swift */,
+				767931BB2D158BCE00D99D92 /* NedsRaceItemView.swift */,
+			);
+			path = RaceItemView;
+			sourceTree = "<group>";
+		};
 		7634A1292D18CD2D001FAD36 /* NedsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +222,8 @@
 		767931802D143E7700D99D92 /* Neds */ = {
 			isa = PBXGroup;
 			children = (
+				344B35D52D1A6519006499FE /* Helpers */,
+				344B35D02D1A6412006499FE /* Mocks */,
 				767931BD2D159BDD00D99D92 /* Styles */,
 				767931B42D14D40D00D99D92 /* Models */,
 				767931AD2D14D19F00D99D92 /* Features */,
@@ -264,12 +318,14 @@
 		767931B02D14D2E400D99D92 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				767931B72D14D68600D99D92 /* ListingView.swift */,
-				767931BB2D158BCE00D99D92 /* RaceItemView.swift */,
+				344B35E62D1A901F006499FE /* RaceItemView */,
+				767931B72D14D68600D99D92 /* NedsListingView.swift */,
 				767931C02D15A37200D99D92 /* NedsRaceSelectionView.swift */,
 				767931C22D15A4D300D99D92 /* NedsCheckboxView.swift */,
 				76F979E92D1A4729006539FA /* NedsErrorView.swift */,
 				344B35CD2D1A5886006499FE /* NedsBannerView.swift */,
+				344B35D92D1A6E31006499FE /* NedsSpinnerView.swift */,
+				344B35E32D1A8B4C006499FE /* NedsRaceListingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -408,6 +464,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344B35DD2D1A6FB2006499FE /* listing_respose_mock.json in Resources */,
+				344B35D32D1A642D006499FE /* race_summary_mock.json in Resources */,
 				76E8CA372D1A1CFD0077B95B /* Assets.xcassets in Resources */,
 				76E8CA352D1A1CC90077B95B /* Preview Assets.xcassets in Resources */,
 			);
@@ -417,6 +475,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344B35DE2D1A6FB2006499FE /* listing_respose_mock.json in Resources */,
+				344B35D22D1A642D006499FE /* race_summary_mock.json in Resources */,
 				76E8CA382D1A1CFD0077B95B /* Assets.xcassets in Resources */,
 				76E8CA362D1A1CCA0077B95B /* Preview Assets.xcassets in Resources */,
 			);
@@ -444,14 +504,20 @@
 				76E8CA132D1A1CA40077B95B /* AppColors.swift in Sources */,
 				76E8CA172D1A1CC20077B95B /* CountdownManager.swift in Sources */,
 				76E8CA1F2D1A1CC20077B95B /* HTTPMethod.swift in Sources */,
+				344B35EC2D1A9086006499FE /* NedsRaceTitleView.swift in Sources */,
+				344B35D72D1A653A006499FE /* JsonFileDecoder.swift in Sources */,
 				76E8CA152D1A1CA90077B95B /* RaceSummary.swift in Sources */,
+				344B35EF2D1A90EA006499FE /* NedsRaceCountdownView.swift in Sources */,
 				76E8CA1E2D1A1CC20077B95B /* NedsRaceSelectionView.swift in Sources */,
 				76E8CA242D1A1CC20077B95B /* APIEndpoint.swift in Sources */,
 				76E8CA212D1A1CC20077B95B /* NedsListingEndpoint.swift in Sources */,
-				76E8CA1B2D1A1CC20077B95B /* ListingView.swift in Sources */,
+				344B35E82D1A907B006499FE /* NedsRaceSubtitleView.swift in Sources */,
+				344B35DA2D1A6E31006499FE /* NedsSpinnerView.swift in Sources */,
+				76E8CA1B2D1A1CC20077B95B /* NedsListingView.swift in Sources */,
 				76E8CA202D1A1CC20077B95B /* NedsAPIError.swift in Sources */,
+				344B35E42D1A8B4C006499FE /* NedsRaceListingView.swift in Sources */,
 				344B35CE2D1A5886006499FE /* NedsBannerView.swift in Sources */,
-				76E8CA192D1A1CC20077B95B /* RaceItemView.swift in Sources */,
+				76E8CA192D1A1CC20077B95B /* NedsRaceItemView.swift in Sources */,
 				76E8CA392D1A1D120077B95B /* AppFonts.swift in Sources */,
 				76E8CA252D1A1CC20077B95B /* NedsApp.swift in Sources */,
 				76E8CA1C2D1A1CC20077B95B /* NedsCheckboxView.swift in Sources */,
@@ -470,14 +536,20 @@
 				76E8CA142D1A1CA50077B95B /* AppColors.swift in Sources */,
 				76E8CA262D1A1CC20077B95B /* CountdownManager.swift in Sources */,
 				76E8CA2E2D1A1CC20077B95B /* HTTPMethod.swift in Sources */,
+				344B35EB2D1A9086006499FE /* NedsRaceTitleView.swift in Sources */,
+				344B35D82D1A653A006499FE /* JsonFileDecoder.swift in Sources */,
 				76E8CA162D1A1CAB0077B95B /* RaceSummary.swift in Sources */,
+				344B35EE2D1A90EA006499FE /* NedsRaceCountdownView.swift in Sources */,
 				76E8CA2D2D1A1CC20077B95B /* NedsRaceSelectionView.swift in Sources */,
 				76E8CA332D1A1CC20077B95B /* APIEndpoint.swift in Sources */,
 				76E8CA302D1A1CC20077B95B /* NedsListingEndpoint.swift in Sources */,
-				76E8CA2A2D1A1CC20077B95B /* ListingView.swift in Sources */,
+				344B35E92D1A907B006499FE /* NedsRaceSubtitleView.swift in Sources */,
+				344B35DB2D1A6E31006499FE /* NedsSpinnerView.swift in Sources */,
+				76E8CA2A2D1A1CC20077B95B /* NedsListingView.swift in Sources */,
 				76E8CA2F2D1A1CC20077B95B /* NedsAPIError.swift in Sources */,
+				344B35E52D1A8B4C006499FE /* NedsRaceListingView.swift in Sources */,
 				344B35CF2D1A5886006499FE /* NedsBannerView.swift in Sources */,
-				76E8CA282D1A1CC20077B95B /* RaceItemView.swift in Sources */,
+				76E8CA282D1A1CC20077B95B /* NedsRaceItemView.swift in Sources */,
 				76E8CA3A2D1A1D130077B95B /* AppFonts.swift in Sources */,
 				76E8CA342D1A1CC20077B95B /* NedsApp.swift in Sources */,
 				76E8CA2B2D1A1CC20077B95B /* NedsCheckboxView.swift in Sources */,
@@ -555,7 +627,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -625,7 +697,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -683,6 +755,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"Neds/Preview Content\"";
+				DEVELOPMENT_TEAM = 76G3LT2573;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -707,7 +780,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -717,13 +790,13 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.NedsDevelopment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ndev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Development;
@@ -768,6 +841,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Neds/Preview Content\"";
+				DEVELOPMENT_TEAM = 76G3LT2573;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -786,7 +860,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -795,12 +869,12 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.NedsDevelopment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ndev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -846,6 +920,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"Neds/Preview Content\"";
+				DEVELOPMENT_TEAM = 76G3LT2573;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -870,7 +945,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -880,13 +955,13 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.NedsProduction;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.nprd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Development;
@@ -931,6 +1006,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Neds/Preview Content\"";
+				DEVELOPMENT_TEAM = 76G3LT2573;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -949,7 +1025,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -958,12 +1034,12 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.NedsProduction;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.nprd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1029,6 +1105,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Development;
 		};
@@ -1085,6 +1162,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Production;

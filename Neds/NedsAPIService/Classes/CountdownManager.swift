@@ -24,17 +24,17 @@ class CountdownManager: ObservableObject {
 
     private func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
-            // Ensure we're on the main actor when updating the state
             Task { @MainActor in
                 self?.currentTime = Date()
             }
         }
-        // Ensure the timer runs on the main run loop for UI updates
         RunLoop.main.add(timer!, forMode: .common)
     }
 
     deinit {
-        timer?.invalidate()
-        timer = nil
+        Task { @MainActor [weak self] in
+            self?.timer?.invalidate()
+            self?.timer = nil
+        }
     }
 }

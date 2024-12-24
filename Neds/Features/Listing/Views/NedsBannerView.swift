@@ -44,8 +44,10 @@ struct NedsBannerView: View {
     
     private func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { _ in
-            withAnimation {
-                currentIndex = (currentIndex + 1) % images.count
+            Task { @MainActor in
+                withAnimation {
+                    self.currentIndex = (self.currentIndex + 1) % self.images.count
+                }
             }
         }
     }

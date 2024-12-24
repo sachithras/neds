@@ -7,25 +7,6 @@
 
 import SwiftUI
 
-//class NedsRaceTypeSelectionArray: ObservableObject, Equatable {
-//    
-//    @Published var raceTypeSelections: [NedsRaceTypeSelection]
-//
-//    init(raceTypeSelections: [NedsRaceTypeSelection]) {
-//        self.raceTypeSelections = raceTypeSelections
-//    }
-//    
-//    func getSelectedRaceTypes() -> [NedsRaceType] {
-//        raceTypeSelections
-//            .filter { $0.isSelected }
-//            .map{ $0.raceType }
-//    }
-//    
-//    static func == (lhs: NedsRaceTypeSelectionArray, rhs: NedsRaceTypeSelectionArray) -> Bool {
-//        lhs.raceTypeSelections == rhs.raceTypeSelections
-//    }
-//}
-
 @Observable class NedsRaceTypeSelection: Equatable {
     
     let raceType: NedsRaceType

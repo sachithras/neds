@@ -18,12 +18,18 @@ class ListingViewModel: ObservableObject {
     @Published var raceSummaries: [RaceSummary]? = []
     @Published var filteredRaceSummaries: [RaceSummary]? = []
     @Published var errorMessage: String?
+    @Published var isLoading: Bool = false
     
     init(listingService: RacingServiceProtocol) {
         self.listingService = listingService
     }
     
     func fetchRaces(for raceTypes: [NedsRaceType]) {
+        if isLoading {
+            // still loading, wait until completes
+            return
+        }
+        isLoading = true
         listingService.getRaces()
             .map { raceData -> [RaceSummary] in
                 let raceSummaries = Array(raceData.data.raceSummaries.values)
@@ -39,6 +45,7 @@ class ListingViewModel: ObservableObject {
                 },
                 receiveValue: { [weak self] data in
                     guard let self = self else { return }
+                    self.isLoading = false
                     self.raceSummaries = data
                     self.filteredRaceSummaries = data
                 }
@@ -47,6 +54,7 @@ class ListingViewModel: ObservableObject {
     }
     
     private func handleError(_ error: Error) {
+        isLoading = false
         raceSummaries = nil
         filteredRaceSummaries = nil
         debugPrint("Error fetching races: \(error.localizedDescription)")

@@ -15,13 +15,16 @@ struct NedsErrorView: View {
     
     var body: some View {
         Spacer()
-        Text(errorMessage).padding()
+        Text(errorMessage)
+            .padding()
+            .font(AppFont.errorTitlePrimary)
         Button(action: {
             onRetry()
         }) {
             Text("Retry now")
                 .padding()
                 .cornerRadius(10)
+                .font(AppFont.errorTitlePrimary)
         }
         .background(Color(AppColors.Button.primaryBackgroundColor))
         .foregroundStyle(Color(AppColors.Button.primaryForegroundColor))
