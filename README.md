@@ -1,8 +1,8 @@
-# Neds App Assignment
+# Neds App
 
 ![IMG_8093C8BA972D-1](https://github.com/user-attachments/assets/54793634-6527-4bcb-8b5d-5795ba85086e)
 
-This repo contains the iOS assignment done in SwiftUI, please refer to this readme for cloning, and running.
+This repo contains the iOS demo project done in SwiftUI, please refer to this readme for cloning, and running.
 
 ## Cloning the project
 
