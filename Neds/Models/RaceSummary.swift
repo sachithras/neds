@@ -7,15 +7,15 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - DataResponse
 struct DataResponse<T: Codable>: Codable {
     let status: Int
     let data: T
     let message: String
 }
 
-// MARK: - DataClass
-struct DataClass: Codable {
+// MARK: - RaceData
+struct RaceData: Codable {
     let nextToGoIDS: [String]
     let raceSummaries: [String: RaceSummary]
 
@@ -68,12 +68,12 @@ struct AdvertisedStart: Codable {
 struct RaceForm: Codable {
     let distance: Int?
     let distanceType: DistanceType?
-    let distanceTypeID: String
+    let distanceTypeID: String?
     let trackCondition: DistanceType?
     let trackConditionID: String?
     let raceComment, additionalData: String?
-    let generated: Int
-    let silkBaseURL: SilkBaseURL
+    let generated: Int?
+    let silkBaseURL: SilkBaseURL?
     let raceCommentAlternative: String?
     let weather: DistanceType?
     let weatherID: String?

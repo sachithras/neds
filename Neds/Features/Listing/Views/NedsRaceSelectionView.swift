@@ -15,6 +15,8 @@ struct RaceSelectionView: View {
         HStack {
             ForEach(0..<raceTypes.count, id: \.self) { index in
                 NedsCheckboxView(raceTypeSelection: raceTypes[index])
+                    .accessibilityLabel("Navigate to Detail View")
+                    .accessibilityHint("Double-tap to navigate to the detail screen.")
             }
         }
     }

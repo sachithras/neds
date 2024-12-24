@@ -23,28 +23,34 @@ struct ListingView: View {
     var body: some View {
         NavigationView(content: {
             VStack {
+                Divider()
                 RaceSelectionView(raceTypes: $raceFilters)
                     .onChange(of: raceFilters.map(\.isSelected)) { oldValue, newValue in
-                        let selectedItems = raceFilters.filter { $0.isSelected }
-                            .map { $0.raceType }
-                        viewModel.fetchRaces(for: selectedItems)
-                }
-                if let races = viewModel.filteredRaceSummaries {
-                    RaceListingView(sortedRaces: races)
-                } else {
-                    Text("No Data")
+                        fetchRaces()
+                    }
+                Divider()
+//                if let races = viewModel.filteredRaceSummaries, !races.isEmpty {
+//                    RaceListingView(sortedRaces: races)
+//                } else if let error = viewModel.errorMessage {
+//                    NedsErrorView(errorMessage: error) {
+//                        fetchRaces()
+//                    }
+//                }
+                NedsErrorView(errorMessage: "Error") {
+                    fetchRaces()
                 }
             }
             .navigationTitle("Next to go")
             .onAppear(perform: {
-                let selectedItems = raceFilters.filter { $0.isSelected }
-                    .map { $0.raceType }
-                viewModel.fetchRaces(for: selectedItems)
+                fetchRaces()
             })
-            .onChange(of: raceFilters) { oldValue, newValue in
-                
-            }
         })
+    }
+    
+    func fetchRaces() {
+        let selectedItems = raceFilters.filter { $0.isSelected }
+            .map { $0.raceType }
+        viewModel.fetchRaces(for: selectedItems)
     }
 }
 

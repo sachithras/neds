@@ -12,13 +12,13 @@ enum NedsListingEndpoint: APIEndpoint {
     case getNextRaces(method: String, count: String)
     
     var baseURL: URL? {
-        return URL(string: "https://api.neds.com.au/rest/v1/")
+        return URL(string: "https://api.neds.com.au")
     }
     
     var path: String {
         switch self {
         case .getNextRaces:
-            return "racing/"
+            return "/rest/v1/racing/"
         }
     }
     
@@ -30,7 +30,7 @@ enum NedsListingEndpoint: APIEndpoint {
     }
     
     var headers: [String : String]? {
-        // Currently only one header, and thats not expecting any header
+        // Currently only one case, and thats not expecting any header
         return nil
     }
     

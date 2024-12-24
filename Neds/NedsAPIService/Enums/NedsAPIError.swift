@@ -7,20 +7,22 @@
 
 import Foundation
 
-enum NedsAPIError: Error {
-    
+enum NedsAPIError: LocalizedError {
     case urlFormatError
     case responseError
-    case decodingError
+    case decodingError(DecodingError)
+    case unknown(Error)
     
-    var errorDescription: String {
+    var errorDescription: String? {
         switch self {
         case .urlFormatError:
-            return "Incorrect URL formation"
+            return "The URL is not correctly formatted."
         case .responseError:
-            return "Error response from server"
-        case .decodingError:
-            return "Unable to decode response"
+            return "The server responded with an error."
+        case .decodingError(let error):
+            return "Decoding failed: \(error.localizedDescription)"
+        case .unknown(let error):
+            return "An unknown error occurred: \(error.localizedDescription)"
         }
     }
 }

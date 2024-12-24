@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RaceItemView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var raceSummary: RaceSummary
     
     var currentTime: Date
@@ -18,6 +20,7 @@ struct RaceItemView: View {
             if let raceType = NedsRaceType(rawValue: raceSummary.categoryID) {
                 Image(raceType.icon)
                     .resizable()
+                    .aspectRatio(contentMode: .fit)
                     .frame(width: 30, height: 30)
             } else {
                 Image("")
