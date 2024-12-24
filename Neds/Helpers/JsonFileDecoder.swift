@@ -22,10 +22,7 @@ class JSONFileDecoder {
         }
         
         do {
-            // Load the file into Data
             let jsonData = try Data(contentsOf: fileURL)
-            
-            // Decode the JSON data into the specified type
             let decodedObject = try decoder.decode(T.self, from: jsonData)
             return decodedObject
         } catch {

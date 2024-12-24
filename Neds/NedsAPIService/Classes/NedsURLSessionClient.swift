@@ -11,15 +11,12 @@ import Combine
 class NedsURLSessionClient<EndpointType: APIEndpoint>: APIProtocol {
     
     func request<T: Codable>(endpoint: EndpointType) -> AnyPublisher<T, Error> {
-        // Construct the URL
         guard let url = constructURL(from: endpoint) else {
             return Fail(error: NedsAPIError.urlFormatError).eraseToAnyPublisher()
         }
         
-        // Create the URLRequest
         let request = createRequest(from: endpoint, with: url)
         
-        // Perform the request
         return URLSession.shared.dataTaskPublisher(for: request)
             .subscribe(on: DispatchQueue.global(qos: .background))
             .tryMap { data, response in

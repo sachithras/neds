@@ -31,6 +31,6 @@ enum AppColors {
         static let red = Color("countdown_red")
         static let orange = Color("countdown_orange")
         static let green = Color("countdown_green")
-        static let gray = Color("countdown_gray") // Consistent spelling
+        static let gray = Color("countdown_gray")
     }
 }
