@@ -25,6 +25,8 @@
 		344B35EC2D1A9086006499FE /* NedsRaceTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35EA2D1A907F006499FE /* NedsRaceTitleView.swift */; };
 		344B35EE2D1A90EA006499FE /* NedsRaceCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35ED2D1A90DF006499FE /* NedsRaceCountdownView.swift */; };
 		344B35EF2D1A90EA006499FE /* NedsRaceCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35ED2D1A90DF006499FE /* NedsRaceCountdownView.swift */; };
+		34C5CA6C2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C5CA6B2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard */; };
+		34C5CA6D2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C5CA6B2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard */; };
 		7634A1332D1A0D07001FAD36 /* MockAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634A1322D1A0D07001FAD36 /* MockAPIProvider.swift */; };
 		76E8CA132D1A1CA40077B95B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C62D15AD2D00D99D92 /* AppColors.swift */; };
 		76E8CA142D1A1CA50077B95B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C62D15AD2D00D99D92 /* AppColors.swift */; };
@@ -91,6 +93,7 @@
 		344B35E72D1A9071006499FE /* NedsRaceSubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceSubtitleView.swift; sourceTree = "<group>"; };
 		344B35EA2D1A907F006499FE /* NedsRaceTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceTitleView.swift; sourceTree = "<group>"; };
 		344B35ED2D1A90DF006499FE /* NedsRaceCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsRaceCountdownView.swift; sourceTree = "<group>"; };
+		34C5CA6B2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NedsLaunchScreen.storyboard; sourceTree = "<group>"; };
 		7634A1222D169A7A001FAD36 /* CountdownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
 		7634A1282D18CD2D001FAD36 /* NedsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NedsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7634A1322D1A0D07001FAD36 /* MockAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIProvider.swift; sourceTree = "<group>"; };
@@ -178,6 +181,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34C5CA6A2D1AA6C2003E7816 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				34C5CA6B2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		7634A1292D18CD2D001FAD36 /* NedsTests */ = {
@@ -309,6 +320,7 @@
 		767931AD2D14D19F00D99D92 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				34C5CA6A2D1AA6C2003E7816 /* Launch */,
 				767931AE2D14D2D500D99D92 /* Listing */,
 			);
 			path = Features;
@@ -476,6 +488,7 @@
 			files = (
 				344B35DD2D1A6FB2006499FE /* listing_respose_mock.json in Resources */,
 				344B35D32D1A642D006499FE /* race_summary_mock.json in Resources */,
+				34C5CA6C2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard in Resources */,
 				76E8CA372D1A1CFD0077B95B /* Assets.xcassets in Resources */,
 				76E8CA352D1A1CC90077B95B /* Preview Assets.xcassets in Resources */,
 			);
@@ -487,6 +500,7 @@
 			files = (
 				344B35DE2D1A6FB2006499FE /* listing_respose_mock.json in Resources */,
 				344B35D22D1A642D006499FE /* race_summary_mock.json in Resources */,
+				34C5CA6D2D1AA6DB003E7816 /* NedsLaunchScreen.storyboard in Resources */,
 				76E8CA382D1A1CFD0077B95B /* Assets.xcassets in Resources */,
 				76E8CA362D1A1CCA0077B95B /* Preview Assets.xcassets in Resources */,
 			);
@@ -785,11 +799,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Neds Dev";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = NedsLaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -803,11 +818,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ndev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Development;
 		};
@@ -865,11 +884,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Neds Dev";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = NedsLaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -882,10 +902,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ndev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Production;
@@ -950,11 +974,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Neds;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = NedsLaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -968,11 +994,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.nprd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Development;
 		};
@@ -1030,11 +1060,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Neds;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = NedsLaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1047,10 +1079,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.nprd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Production;
@@ -1107,6 +1143,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = NedsLaunchScreen.storyboard;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -1166,6 +1204,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = NedsLaunchScreen.storyboard;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
