@@ -14,16 +14,18 @@ struct NedsErrorView: View {
     let onRetry: () -> Void
     
     var body: some View {
-        Text(errorMessage)
+        Spacer()
+        Text(errorMessage).padding()
         Button(action: {
             onRetry()
         }) {
             Text("Retry now")
                 .padding()
-                .background(Color.blue)
-                .foregroundColor(.white)
                 .cornerRadius(10)
-        }.listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+        }
+        .background(Color(AppColors.Button.primaryBackgroundColor))
+        .foregroundStyle(Color(AppColors.Button.primaryForegroundColor))
+        Spacer()
     }
 }
 

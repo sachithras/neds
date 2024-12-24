@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		344B35CE2D1A5886006499FE /* NedsBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35CD2D1A5886006499FE /* NedsBannerView.swift */; };
+		344B35CF2D1A5886006499FE /* NedsBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B35CD2D1A5886006499FE /* NedsBannerView.swift */; };
 		7634A1332D1A0D07001FAD36 /* MockAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634A1322D1A0D07001FAD36 /* MockAPIProvider.swift */; };
 		76E8CA132D1A1CA40077B95B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C62D15AD2D00D99D92 /* AppColors.swift */; };
 		76E8CA142D1A1CA50077B95B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767931C62D15AD2D00D99D92 /* AppColors.swift */; };
@@ -64,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		344B35CD2D1A5886006499FE /* NedsBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NedsBannerView.swift; sourceTree = "<group>"; };
 		7634A1222D169A7A001FAD36 /* CountdownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
 		7634A1282D18CD2D001FAD36 /* NedsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NedsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7634A1322D1A0D07001FAD36 /* MockAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIProvider.swift; sourceTree = "<group>"; };
@@ -266,6 +269,7 @@
 				767931C02D15A37200D99D92 /* NedsRaceSelectionView.swift */,
 				767931C22D15A4D300D99D92 /* NedsCheckboxView.swift */,
 				76F979E92D1A4729006539FA /* NedsErrorView.swift */,
+				344B35CD2D1A5886006499FE /* NedsBannerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -446,6 +450,7 @@
 				76E8CA212D1A1CC20077B95B /* NedsListingEndpoint.swift in Sources */,
 				76E8CA1B2D1A1CC20077B95B /* ListingView.swift in Sources */,
 				76E8CA202D1A1CC20077B95B /* NedsAPIError.swift in Sources */,
+				344B35CE2D1A5886006499FE /* NedsBannerView.swift in Sources */,
 				76E8CA192D1A1CC20077B95B /* RaceItemView.swift in Sources */,
 				76E8CA392D1A1D120077B95B /* AppFonts.swift in Sources */,
 				76E8CA252D1A1CC20077B95B /* NedsApp.swift in Sources */,
@@ -471,6 +476,7 @@
 				76E8CA302D1A1CC20077B95B /* NedsListingEndpoint.swift in Sources */,
 				76E8CA2A2D1A1CC20077B95B /* ListingView.swift in Sources */,
 				76E8CA2F2D1A1CC20077B95B /* NedsAPIError.swift in Sources */,
+				344B35CF2D1A5886006499FE /* NedsBannerView.swift in Sources */,
 				76E8CA282D1A1CC20077B95B /* RaceItemView.swift in Sources */,
 				76E8CA3A2D1A1D130077B95B /* AppFonts.swift in Sources */,
 				76E8CA342D1A1CC20077B95B /* NedsApp.swift in Sources */,

@@ -23,24 +23,21 @@ struct ListingView: View {
     var body: some View {
         NavigationView(content: {
             VStack {
-                Divider()
+                NedsBannerView()
                 RaceSelectionView(raceTypes: $raceFilters)
                     .onChange(of: raceFilters.map(\.isSelected)) { oldValue, newValue in
                         fetchRaces()
                     }
-                Divider()
-//                if let races = viewModel.filteredRaceSummaries, !races.isEmpty {
-//                    RaceListingView(sortedRaces: races)
-//                } else if let error = viewModel.errorMessage {
-//                    NedsErrorView(errorMessage: error) {
-//                        fetchRaces()
-//                    }
-//                }
-                NedsErrorView(errorMessage: "Error") {
-                    fetchRaces()
+                if let races = viewModel.filteredRaceSummaries, !races.isEmpty {
+                    RaceListingView(sortedRaces: races)
+                } else if let error = viewModel.errorMessage {
+                    NedsErrorView(errorMessage: error) {
+                        fetchRaces()
+                    }
                 }
             }
             .navigationTitle("Next to go")
+            .navigationBarTitleDisplayMode(.large)
             .onAppear(perform: {
                 fetchRaces()
             })

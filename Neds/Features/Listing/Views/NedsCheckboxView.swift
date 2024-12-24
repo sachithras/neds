@@ -75,8 +75,8 @@ struct NedsCheckboxView: View {
         Button(action: toggle){
             HStack{
                 Image(systemName: raceTypeSelection.isSelected ? "checkmark.square": "square")
-                    .tint(raceTypeSelection.isSelected ? AppColors.primarySelectionColor :
-                            AppColors.primaryDeselectionColor)
+                    .tint(raceTypeSelection.isSelected ? AppColors.Checkbox.selection :
+                            AppColors.Checkbox.deselection)
                 Image(raceTypeSelection.raceType.icon)
                     .resizable()
                     .aspectRatio(contentMode: .fit)

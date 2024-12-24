@@ -10,15 +10,22 @@ import SwiftUI
 
 enum AppColors {
     
-    // selection / deselection tint colors for checkbox
-    static let primarySelectionColor = Color("primary_selection_color")
-    static let primaryDeselectionColor = Color("primary_deselection_color")
-    static let primarySelectionTintColor = Color("primary_selection_tint_color")
-    static let primaryDeselectionTintColor = Color("primary_deselection_tint_color")
+    enum Button {
+        static let primaryBackgroundColor = Color("primary_background_color")
+        static let primaryForegroundColor = Color("primary_foreground_color")
+    }
     
-    // countdown text colors
-    static let countdownRed = Color("countdown_red")
-    static let countdownOrange = Color("countdown_orange")
-    static let countdownGreen = Color("countdown_green")
-    static let countdownGrey = Color("countdown_gray")
+    enum Checkbox {
+        static let selection = Color("primary_selection_color")
+        static let deselection = Color("primary_deselection_color")
+        static let selectionTint = Color("primary_selection_tint_color")
+        static let deselectionTint = Color("primary_deselection_tint_color")
+    }
+    
+    enum Countdown {
+        static let red = Color("countdown_red")
+        static let orange = Color("countdown_orange")
+        static let green = Color("countdown_green")
+        static let gray = Color("countdown_gray") // Consistent spelling
+    }
 }

@@ -78,13 +78,13 @@ fileprivate struct CountdownView: View {
         var textColor: Color {
             switch self {
             case .none, .expired:
-                return AppColors.countdownGrey
+                return AppColors.Countdown.gray
             case .lessThanAMinutePassed:
-                return AppColors.countdownRed
+                return AppColors.Countdown.red
             case .remainingAMinute:
-                return AppColors.countdownOrange
+                return AppColors.Countdown.orange
             case .remainingOverAMinute:
-                return AppColors.countdownGreen
+                return AppColors.Countdown.green
             }
         }
         
