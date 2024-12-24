@@ -249,6 +249,7 @@
 				767931BD2D159BDD00D99D92 /* Styles */,
 				767931B42D14D40D00D99D92 /* Models */,
 				767931AD2D14D19F00D99D92 /* Features */,
+				767931A12D14C59400D99D92 /* Classes */,
 				7679318F2D1450D700D99D92 /* NedsAPIService */,
 				767931812D143E7700D99D92 /* NedsApp.swift */,
 				767931852D143E7900D99D92 /* Assets.xcassets */,
@@ -269,7 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				767931AA2D14D05C00D99D92 /* Services */,
-				767931A12D14C59400D99D92 /* Classes */,
 				7679319E2D14BFF300D99D92 /* Endpoints */,
 				767931992D14BF3000D99D92 /* Enums */,
 				767931962D14BEFC00D99D92 /* Protocols */,
@@ -306,7 +306,6 @@
 		767931A12D14C59400D99D92 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				767931A22D14C5B800D99D92 /* NedsURLSessionClient.swift */,
 				7634A1222D169A7A001FAD36 /* CountdownManager.swift */,
 			);
 			path = Classes;
@@ -315,6 +314,7 @@
 		767931AA2D14D05C00D99D92 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				767931A22D14C5B800D99D92 /* NedsURLSessionClient.swift */,
 				767931AB2D14D07400D99D92 /* NedsRacingService.swift */,
 			);
 			path = Services;
